@@ -55,10 +55,10 @@ export default function Poster() {
             <rect x="38" y="28" width="24" height="8" fill="black" />
           </svg>
 
-          <h1 className="text-3xl font-bold tracking-[0.2em] text-red-500 mb-1">
-            LOCKIN LAIR
+          <h1 className="text-3xl font-bold tracking-[0.2em] text-white mb-1">
+            DO NOT <span className="text-red-500">DISTURB</span>
           </h1>
-          <p className="text-white/60 text-sm tracking-widest">CO-WORKING SPACE</p>
+          <p className="text-red-500 text-sm tracking-widest">LOCKIN LAIR</p>
         </div>
 
         {/* QR Code Section */}
@@ -96,7 +96,7 @@ export default function Poster() {
           </div>
 
           <p className="text-white mt-6 text-lg tracking-widest font-bold">
-            DO NOT <span className="text-red-500">DISTURB</span>
+            SCAN FOR <span className="text-red-500">RULES</span>
           </p>
         </div>
 
