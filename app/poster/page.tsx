@@ -58,7 +58,7 @@ export default function Poster() {
           <h1 className="text-3xl font-bold tracking-[0.2em] text-white mb-1">
             DO NOT <span className="text-red-500">DISTURB</span>
           </h1>
-          <p className="text-red-500 text-sm tracking-widest">LOCKIN LAIR</p>
+          <p className="text-red-500 text-sm tracking-widest">SCAN FOR RULES</p>
         </div>
 
         {/* QR Code Section */}
@@ -96,7 +96,7 @@ export default function Poster() {
           </div>
 
           <p className="text-white mt-6 text-lg tracking-widest font-bold">
-            SCAN FOR <span className="text-red-500">RULES</span>
+            LOCKIN <span className="text-red-500">LAIR</span>
           </p>
         </div>
 
