@@ -10,11 +10,27 @@ const oswald = Oswald({
 
 export default function Poster() {
   return (
-    <div
-      className={`min-h-screen bg-black flex items-center justify-center p-8 ${oswald.className}`}
-    >
-      {/* Poster Container - A4 ratio approximately */}
-      <div className="w-full max-w-md aspect-[3/4] bg-black border-4 border-red-600 p-8 flex flex-col items-center justify-between relative overflow-hidden">
+    <>
+      {/* Print styles */}
+      <style jsx global>{`
+        @media print {
+          @page {
+            size: A4 portrait;
+            margin: 0;
+          }
+          html, body {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            background: black !important;
+          }
+        }
+      `}</style>
+
+      <div
+        className={`min-h-screen bg-black flex items-center justify-center p-8 print:p-0 ${oswald.className}`}
+      >
+        {/* Poster Container - A4 ratio */}
+        <div className="w-full max-w-md print:max-w-none print:w-[210mm] print:h-[297mm] aspect-[3/4] print:aspect-auto bg-black border-4 border-red-600 p-8 print:p-12 flex flex-col items-center justify-between relative overflow-hidden">
         {/* Decorative corner elements */}
         <div className="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-red-600 -translate-x-[2px] -translate-y-[2px]" />
         <div className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-red-600 translate-x-[2px] -translate-y-[2px]" />
@@ -109,6 +125,7 @@ export default function Poster() {
           }} />
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
