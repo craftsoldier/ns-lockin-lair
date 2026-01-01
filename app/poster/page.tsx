@@ -80,7 +80,7 @@ export default function Poster() {
           </div>
 
           <p className="text-white mt-6 text-lg tracking-widest font-bold">
-            SCAN TO <span className="text-red-500">ENTER</span>
+            DO NOT <span className="text-red-500">DISTURB</span>
           </p>
         </div>
 
