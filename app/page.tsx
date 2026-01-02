@@ -44,7 +44,7 @@ export default function Home() {
             </svg>
           </div>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-[0.25em] text-red-500 mb-2">
-            LOCKIN LAIR
+            LOCKEDIN LAIR
           </h1>
           <h2 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-wider border-b-2 border-red-600 pb-1 inline-block">
             HOUSE RULES

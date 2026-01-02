@@ -71,7 +71,7 @@ export default function Poster() {
             {/* QR with custom styling */}
             <div className="relative bg-black p-4 border-2 border-red-600 transform rotate-0 hover:rotate-1 transition-transform">
               <QRCodeSVG
-                value="https://ns-lockin-lair.vercel.app"
+                value="https://ns-lockedin-lair.vercel.app"
                 size={180}
                 bgColor="#000000"
                 fgColor="#dc2626"
@@ -96,7 +96,7 @@ export default function Poster() {
           </div>
 
           <p className="text-white mt-6 text-lg tracking-widest font-bold">
-            LOCKIN <span className="text-red-500">LAIR</span>
+            LOCKEDIN <span className="text-red-500">LAIR</span>
           </p>
         </div>
 
